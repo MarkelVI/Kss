@@ -1,0 +1,50 @@
+body {
+    font-size: 15pt;
+    background-color: #343C3B;
+    color: white;
+}
+
+
+button {
+    background-color: #5DADE2;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  border: 1px solid #5DADE2;
+  background-color: #343C3B;
+  color:#5DADE2;
+  border-radius:0px;
+}
+
+
+#longueur {
+  background-color: #343C3B;
+  width: 80%;
+  height: 100px;
+  border-radius: 4px;
+  color: white;
+}
+
+#answer {
+  background-color: #343C3B;
+  resize: none;
+  width: 200px;
+  height: 2.2em;
+  border-radius: 12px;
+  color: white;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 1px #5DADE2;
+  box-shadow: 0 0 10px #719ECE;
+}
