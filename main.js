@@ -9,5 +9,5 @@ function getVal() {
 }
 
 function supprimer(){
-  document.getElementById('longueur').innerHTML=' ';
+  document.getElementById('longueur').value=' ';
 }
