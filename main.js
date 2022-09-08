@@ -7,3 +7,7 @@ function getVal() {
   
   document.getElementById('answer').innerHTML =`Le chapitrent fait ${kss} kss, ${kas} kas\net ${sticker} stickers`;
 }
+
+function supprimer(){
+  document.getElementById('longueur').innerHTML=' ';
+}
