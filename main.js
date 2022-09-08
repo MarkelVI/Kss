@@ -13,6 +13,6 @@ function supprimer(){
 }
 
 function trapiser() {
-  document.getElementById('trap').style.visibility='visible';
+  document.getElementById('trap').style.visibility='hidden';
   document.getElementById('trapotin').value='TRAPENT';
 }
