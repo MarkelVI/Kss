@@ -11,3 +11,8 @@ function getVal() {
 function supprimer(){
   document.getElementById('longueur').value=' ';
 }
+
+function trapiser() {
+  document.getElementById('trap').style.visibility='visible';
+  document.getElementById('trapotin').value='TRAPENT';
+}
