@@ -32,6 +32,7 @@ button:hover {
   height: 100px;
   border-radius: 4px;
   color: white;
+  margin-left: 2px;
 }
 
 #answer {
@@ -41,6 +42,7 @@ button:hover {
   height: 3em;
   border-radius: 12px;
   color: white;
+  margin-left: 2px;
 }
 
 textarea:focus {
