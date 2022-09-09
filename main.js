@@ -9,10 +9,28 @@ function getVal() {
 }
 
 function supprimer(){
-  document.getElementById('longueur').value=' ';
+  document.getElementById('longueur').value = '';
 }
 
 function trapiser() {
-  document.getElementById('trap').style.visibility='hidden';
-  document.getElementById('trapotin').value='TRAPENT';
+  text = document.getElementById('trap')
+  button = document.getElementById('trapotin')
+  if (text.style.visibility != 'visible' && button.innerHTML != 'TRAPENT' ) {
+    text.style.visibility = 'visible';
+    document.getElementById('trapotin').innerHTML='TRAPENT';
+  }
+  else {
+    if (text.value != '') {
+      mot = text.value;
+      let replaced = document.getElementById('longueur').value.replace(mot, "trap");
+      document.getElementById('longueur').value = replaced;
+    }
+    else {
+      text.style.visibility = 'hidden';
+      document.getElementById('trapotin').innerHTML='Trap';
+    }
+  }
 }
+
+
+
