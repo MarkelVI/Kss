@@ -9,7 +9,7 @@ function getVal() {
 }
 
 function supprimer(){
-  document.getElementById('longueur').value = '';
+  document.getElementById('longueur').value = ' ';
 }
 
 function trapiser() {
