@@ -32,7 +32,6 @@ button:hover {
   height: 100px;
   border-radius: 4px;
   color: white;
-  margin-left: 2px;
 }
 
 #answer {
@@ -42,7 +41,6 @@ button:hover {
   height: 3em;
   border-radius: 12px;
   color: white;
-  margin-left: 2px;
 }
 
 textarea:focus {
@@ -52,5 +50,10 @@ textarea:focus {
 }
 
 #trap {
-  visibility:hidden
+  visibility:hidden;
+  width: 250px;
+  height: 50px;
+  background-color: #343C3B;
+  color: white;
 }
+
