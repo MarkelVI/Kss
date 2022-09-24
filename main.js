@@ -1,10 +1,16 @@
 function getVal() {
+  var replace = ["'''", "''", "*", "<u>", "</u>", "<s>", "</s>", "<spoil>", "</spoil>", "<code>", "</code>"];
   const val = document.getElementById('longueur').value;
   var chap = val.replace(/http\S+/g, "");
+  for (const element of replace) {
+    chap = chap.replaceAll(element, "");
+  }
+  chap = chap.replaceAll("\n", "\n ").replaceAll("\n ", "\n").replaceAll(" \n", "\n")
+  chap = chap.replaceAll("\n", "")
+  chap = chap.replaceAll("  ", " ")
   var kss = (chap.length/1000).toFixed(1)
   var kas = (val.length/1000).toFixed(1)
   var sticker = (val.match(/http\S+/g) || []).length
-  
   document.getElementById('answer').innerHTML =`Le chapitrent fait ${kss} kss, ${kas} kas\net ${sticker} stickers`;
 }
 
@@ -31,6 +37,4 @@ function trapiser() {
     }
   }
 }
-
-
 
